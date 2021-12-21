@@ -1,2 +1,2 @@
-# RestStudy
-REST 공부
+# WebStudy
+Web 공부
