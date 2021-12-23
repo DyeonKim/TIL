@@ -1,2 +1,2 @@
-# WebStudy
-Web 공부
+# study
+공부
