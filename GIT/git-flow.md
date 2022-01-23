@@ -4,7 +4,6 @@
 [Git Branch](#git-branch) <br/>
 [Git Branch 전략](#git-branch-전략) <br/>
 [Git Workflow](#git-workflow) <br/>
-[Git Conflict]() <br/>
 [Git Wrap up](#git-wrap-up) <br/>
 
 ---
