@@ -26,6 +26,30 @@ Docker를 Windows10에 설치해보자.
 > 이보다 낮은 버전이면 Windows Update 설정을 열어 최신 버전으로 업데이트
 
 <img width="80%" alt="Windows 사양에서 현재 버전 확인" src="https://user-images.githubusercontent.com/45352173/152536753-f3d4ac1f-78c3-455f-baf5-38af9c4c78c0.png" />
+
+<br/>
+
+### 📌 WSL2를 설치하고 활성화하는 방법
+`Windows + S` 클릭하고 "Windows PowerShell" 검색하여 '관리자 권한'으로 실행.
+> Windows PowerShell은 윈도우 환경에서 리눅스 명령어를 사용할 수 있다.
+
+``` bash
+$ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+$ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+```
+두 명령어 모두 ‘작업을 완료했습니다’ 출력으로 종료되었는지 확인
+
+윈도우를 재부팅
+
+ [x64 머신용 최신 WSL2 Linux 커널 업데이트 패키지](https://aka.ms/wsl2kernel)를 다운로드 받아 안내에 따라 설치
+
+Windows PowerShell을 열고 다음 명령어를 실행
+```bash
+$ wsl --set-default-version 2
+```
+
+
 <br/><br/>
 
 ### 0-2. Hyper-V 가상화 기능 활성화
