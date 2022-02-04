@@ -14,11 +14,16 @@
 ![CICD](https://user-images.githubusercontent.com/45352173/152572489-36576f96-8ef6-420c-ae2b-3412fccf8c45.png)
 
 CI
-- ***Continuous Integration*** : 지속적인 통합.
+- ***Continuous Integration*** : 지속적인 통합
+  - 여러개발자들의 코드베이스를 계속해서 통합하는 것을 의미
 
 CD
-- ***Continuous Delivery*** : 지속적인 서비스제공
-- ***Continuous Deploy*** : 지속적인 배포
+- ***Continuous Delivery*** : 지속적인 서비스제공.
+  - 사용자에게 서비스를 지속적으로 배달 하는 것
+  - 코드베이스가 항상 배포가능한 상태를 유지하는 것
+  - 코드만 작성하면 남들이 사용가능한 상태를 만드는 것
+- ***Continuous Deploy*** : 지속적인 배포.
+  - 코드베이스를 사용자가 사용가능한 환경에 배포하는 것을 자동화 를 의미
 
 <br/>
 
@@ -57,3 +62,7 @@ CI/CD는 애플리케이션 통합, 테스트, 제공, 배포에 이르는 라�
 ## 웹서버(Nginx) 설치 후 설정을 하고 어플리케이션을 배포
 
 <br/>
+
+***
+## 📘참고자료
+[Jenkins, 넌 누구냐!](https://velog.io/@juheesvt/Jenkins-Who-Are-You#ci--continuous-integration)
