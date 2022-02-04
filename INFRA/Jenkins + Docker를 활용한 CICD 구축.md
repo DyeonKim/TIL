@@ -39,7 +39,10 @@ CI/CD는 애플리케이션 통합, 테스트, 제공, 배포에 이르는 라�
 ## Jenkins란?
 ![Jenkins](https://user-images.githubusercontent.com/45352173/152574709-88401df8-cee0-4517-ba16-2bca4556e0e6.png)
 
-CI/CD를 도와주는 툴로 가장 널리 쓰인다.
+- CI/CD를 도와주는 툴로 가장 널리 쓰인다.
+- Jenkins는 기본적으로 java runtime 위에서 동작하는 자동화 서버이다. build, test, deployment의 모든 것을 자동화해준다.
+- Jenkins에는 다양한 플러그인들이 존재하는데, 이미 만들어져있는 플러그인들을 사용하거나 아니면 직접 만들어서 각종 작업들을 자동화할 수 있다.
+  - 대표적인 플러그인으로는 Credentials Plugin, Git Plugin, Pipleline 등이 있다
 
 <br/>
 
