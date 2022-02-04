@@ -126,4 +126,4 @@ Windows 환경에서는 hub.docker.com의 계정이 없이는 Docker Hub의 컨�
 
 Kernel update를 먼저 해야하기 때문에 WSL2가 불완전하게 설치되었다는 안내를 해준다.
 
-<img width="80%" src="https://user-images.githubusercontent.com/45352173/152549306-9456cb0e-b699-45e9-b12a-e4f14cb161da.png" />
+<img width="80%" src="https://user-images.githubusercontent.com/45352173/152554803-dbb1c4bb-90de-4690-af37-712ad40768c0.png" />
