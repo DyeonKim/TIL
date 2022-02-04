@@ -6,7 +6,7 @@
 3. [Jenkins란?](Jenkins란)
 4. [Docker로 Jenkins를 설치하고 설정](Docker로-Jenkins를-설치하고-설정)
 5. [GitLab과 Jenkins를 연동](GitLab과-Jenkins를-연동)
-6. [웹서버(Nginx) 설치 후 설정을 하고 어플리케이션을 배포](웹서버Nginx-설치-후-설정을-하고-어플리케이션을-배포)
+6. [웹서버(Nginx) 설치 후 설정을 하고 어플리케이션을 배포](웹서버nginx-설치-후-설정을-하고-어플리케이션을-배포)
 
 <br/><br/>
 
