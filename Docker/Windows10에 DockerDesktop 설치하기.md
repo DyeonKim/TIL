@@ -33,7 +33,8 @@ Docker를 Windows10에 설치해보자.
 `Windows + S` 클릭하고 "Windows PowerShell" 검색하여 '관리자 권한'으로 실행.
 > Windows PowerShell은 윈도우 환경에서 리눅스 명령어를 사용할 수 있다.
 
-``` bash
+DISM(배포 이미지 서비스 및 관리) 명령어로 Microsoft-Windows-Subsystem-Linux 기능을 활성화
+```bash
 $ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
@@ -42,7 +43,7 @@ $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nor
 
 윈도우를 재부팅
 
- [x64 머신용 최신 WSL2 Linux 커널 업데이트 패키지](https://aka.ms/wsl2kernel)를 다운로드 받아 안내에 따라 설치
+[x64 머신용 최신 WSL2 Linux 커널 업데이트 패키지](https://aka.ms/wsl2kernel)를 다운로드 받아 안내에 따라 설치
 
 Windows PowerShell을 열고 다음 명령어를 실행
 ```bash
