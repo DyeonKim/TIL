@@ -141,3 +141,26 @@ Windows 환경에서는 hub.docker.com의 계정이 없이는 Docker Hub의 컨�
 
 이 경우 [x64 머신용 최신 WSL2 Linux 커널 업데이트 패키지](https://aka.ms/wsl2kernel)를 다운로드 받아 안내에 따라 설치해주면 된다.
 
+## 4. 실행
+<img width="80%" alt="Docker Desktop" src="https://user-images.githubusercontent.com/45352173/152578934-4becc623-e8a1-48e3-a68c-0fbf60e3c92a.png" />
+
+``` Bash
+PS C:\Users\[user폴더]> docker --version
+PS C:\Users\[user폴더]> Docker version 20.10.12, build e91ed57
+```
+무사히 실행되는 걸 확인할 수 있다.
+
+Windows 환경에서는 hub.docker.com의 계정 로그인을 해줘야 한다.
+
+``` Bash
+PS C:\Users\[user폴더]> docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: [유저명]
+Password: [비밀번호]
+Login Succeeded
+
+Logging in with your password grants your terminal complete access to your account.
+For better security, log in with a limited-privilege personal access token. Learn more at https://docs.docker.com/go/access-tokens/
+```
+
+이제 image를 pull 받거나 컨테이너를 run할 수 있다.
