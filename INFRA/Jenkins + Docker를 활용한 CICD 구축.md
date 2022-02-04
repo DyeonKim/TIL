@@ -14,11 +14,11 @@
 ![CICD](https://user-images.githubusercontent.com/45352173/152572489-36576f96-8ef6-420c-ae2b-3412fccf8c45.png)
 
 CI
-- Continuous Integration : 지속적인 통합. 통합의 범위는 넓으나 주로 개발자들의 코드를 합치는 것을 의미
+- ***Continuous Integration*** : 지속적인 통합.
 
 CD
-- Continuous Delivery : 지속적인 서비스제공
-- Continuous Deploy : 지속적인 배포
+- ***Continuous Delivery*** : 지속적인 서비스제공
+- ***Continuous Deploy*** : 지속적인 배포
 
 <br/>
 
