@@ -134,8 +134,10 @@ Windows 환경에서는 hub.docker.com의 계정이 없이는 Docker Hub의 컨�
 <br/><br/>
 
 ## 3. 리부팅, 그리고 WSL2 설치
-리부팅 후에 다이알로그 창이 뜬다.
-
-Kernel update를 먼저 해야하기 때문에 WSL2가 불완전하게 설치되었다는 안내를 해준다.
-
+만약 x64 머신용 WSL2 Linux 커널이 최신으로 업데이트 되어 있지 않다면 리부팅 후에 다이알로그 창이 뜬다.
 <img width="80%" src="https://user-images.githubusercontent.com/45352173/152554803-dbb1c4bb-90de-4690-af37-712ad40768c0.png" />
+> Kernel update를 먼저 해야하기 때문에 WSL2가 불완전하게 설치되었다는 안내.
+
+
+이 경우 [x64 머신용 최신 WSL2 Linux 커널 업데이트 패키지](https://aka.ms/wsl2kernel)를 다운로드 받아 안내에 따라 설치해주면 된다.
+
