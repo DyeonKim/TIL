@@ -1,7 +1,7 @@
 # Jenkins + Docker를 활용한 CICD 구축
 
 ⭐ 목차 ⭐
-1. [CICD란?](CICD란)
+1. [CICD란?](/CICD란)
 2. [Docker란?](Docker란)
 3. [Jenkins란?](Jenkins란)
 4. [Docker로 Jenkins를 설치하고 설정](Docker로-Jenkins를-설치하고-설정)
