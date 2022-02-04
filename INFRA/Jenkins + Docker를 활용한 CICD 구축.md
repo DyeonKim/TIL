@@ -28,7 +28,9 @@ CD
 
 CI/CD는 애플리케이션 통합, 테스트, 제공, 배포에 이르는 라이프사이클 전체에 걸쳐서 지속적인 자동화와 모니터링을 제공하며, 이러한 구축사례를 CI/CD 파이프라인이라 부른다.
 
-<br/>
+![cicd pipeline](https://user-images.githubusercontent.com/45352173/152574215-e81c359c-3ca9-43fa-ad4c-e00d67d87b86.png)
+
+<br/><br/>
 
 ## Docker란?
 
