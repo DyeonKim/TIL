@@ -47,8 +47,6 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 <details>
   <summary>GUI 방식으로 해결하는 방법</summary>
   
-  <br/>위의 명령어가 먹히지 않아 해매던 중 혹시 이건가 싶어서 해본 방법<br/>
-  
   <img width="80%" src="https://user-images.githubusercontent.com/45352173/152560357-826da6f3-59ee-47ff-a7c1-193b067769bd.png" />
   <img width="80%" src="https://user-images.githubusercontent.com/45352173/152560633-a92d7e49-71fa-4157-94cb-5382105380cf.png" />
   
