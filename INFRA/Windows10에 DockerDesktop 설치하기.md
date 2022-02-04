@@ -164,3 +164,11 @@ For better security, log in with a limited-privilege personal access token. Lear
 ```
 
 이제 image를 pull 받거나 컨테이너를 run할 수 있다.
+
+
+<br/><br/>
+
+***
+## 📘 참고자료
+- 📽️ [[따배도] 2-5. 도커 설치하기: Windows에 DockerDesktop 설치!(w. WSL2)](https://www.youtube.com/watch?v=Fs7JoQYEB4U&list=PLApuRlvrZKogb78kKq1wRvrjg1VMwYrvi&index=9)
+- ✍️ [[Windows 10] Docker 설치 완벽 가이드(Home 포함)](https://www.lainyzine.com/ko/article/a-complete-guide-to-how-to-install-docker-desktop-on-windows-10/)
