@@ -63,7 +63,7 @@ Home 에디션에서는 Docker Toolbox(boot2docker)가 대안으로 이야기되
 <details>
   <summary>Windows 10 Enterprise, Pro 또는 Education 에서 Hyper-V 활성화</summary>
   
-  `작업관리자` > `성능` 에서 가상화가 `사용`인지 체크
+  `작업관리자` > `성능` 에서 가상화가 <u>사용</u>인지 체크
   
   <img width="50%" alt="작업관리자에서 가상화 체크" src="https://user-images.githubusercontent.com/45352173/152539334-c70a9d4e-e9e5-4505-90f6-fee944479210.png" />
   <br/>
@@ -74,4 +74,18 @@ Home 에디션에서는 Docker Toolbox(boot2docker)가 대안으로 이야기되
   
   <img width="50%" alt="Hyper-V 활성화" src="https://user-images.githubusercontent.com/45352173/152544149-ccd66ce7-bdb6-4336-a85c-99d2e7aebf69.png" />
   
+  위의 설정 확인 후 재설치 후 재부팅
 </details>
+
+
+## 1. [hub.docker.com](https://hub.docker.com) 계정 등록
+Windows 환경에서는 hub.docker.com의 계정이 없이는 Docker Hub의 컨테이너를 사용할 수 없다.<br/>
+따라서 계정 생성을 먼저 해주자.
+
+[Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/) 에서 응용 프로그램 다운로드⬇
+
+`Docker Desktop Installer` 실행
+
+<img width="50%" alt="설치 환경설정" src="https://user-images.githubusercontent.com/45352173/152546058-35f847b1-30fb-46f8-a690-886181f0011e.png" />
+
+Windows 10 Enterprise, Pro 또는 Education에서는 목록에 <u>Enable Hyper-V Windows Feature</u>이 추가됨.
