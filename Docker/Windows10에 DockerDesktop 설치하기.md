@@ -1,0 +1,77 @@
+# Docker를 Windows10에 설치하기
+
+Docker를 Windows10에 설치해보자.
+
+<br/>
+
+## 0. 들어가기 전에
+
+### 0-1. WSL2 란?
+[2020년 5월 Windows 10 May 202 Update(20H1) 업데이트](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/)
+
+윈도우에서 리눅스를 사용할 수 있게 해주는 WSL2 버전이 정식으로 릴리스 되었다.
+> WSL2 : Windows Subsystem for Linux 2
+
+단순히 가상머신으로 리눅스를 사용할 수 있는 것이 아니라, 윈도우 시스템과 통합되어 마치 하나의 머신처럼 자연스럽게 리눅스를 활용하는 것이 가능하다.
+
+<br/>
+ 
+#### 📌 Windows 10에 WSL2의 리눅스 커널 설치 가능한 지 확인
+`Windows + S` 클릭하고 PC 정보(설정)을 검색하여 실행.
+
+<img width="80%" alt="PC 정보 설정 검색" src="https://user-images.githubusercontent.com/45352173/152536048-c4a36ba0-757f-4e64-8637-c8931cc5f538.png" />
+<br/>
+
+버전이 20H1, 20H2, 21H1 혹은 그보다 높은 버전인지 확인
+> 이보다 낮은 버전이면 Windows Update 설정을 열어 최신 버전으로 업데이트
+
+<img width="80%" alt="Windows 사양에서 현재 버전 확인" src="https://user-images.githubusercontent.com/45352173/152536753-f3d4ac1f-78c3-455f-baf5-38af9c4c78c0.png" />
+<br/><br/>
+
+### 0-2. Hyper-V 가상화 기능 활성화
+Hyver-V : Windows 10에서 가상 컴퓨터를 만들 수 있도록 해준다.
+> Hyper-V는 Windows에서 선택적 기능으로 기본 제공되므로 Hyper-V를 다운로드할 필요가 없다.
+> Hyper-V는 Windows 10 Home에는 설치할 수 없습니다.
+
+<br/>
+
+**요구사항**
+- Windows 10 Enterprise, Pro 또는 Education
+- 두 번째 수준 주소 변환(SLAT)을 사용하는 64비트 프로세서.
+- VM 모니터 모드 확장(Intel CPU의 VT-c)에 대한 CPU 지원.
+- 최소 4GB의 메모리.
+
+> 자세한 사항 확인은 [여기서➡](https://docs.microsoft.com/ko-kr/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+
+<br/><br/>
+
+Docker Desktop은 기본적으로 Hyper-V 기능을 사용하기 때문에 Windows 10 Enterprise, Pro 또는 Education 에디션에서만 사용할 수 있었다.<br/>
+Home 에디션에서는 Docker Toolbox(boot2docker)가 대안으로 이야기되곤 했었다만, 현재는 공식적으로 지원이 종료된 상태이다.<br/>
+그러나 Docker Desktop의 발빠른 지원으로 현재는 WSL2를 기반으로 Docker Desktop을 사용하는 것이 가능하다.
+
+<br/>
+
+📌 정리
+- Windows 10 Enterprise, Pro 또는 Education 에디션
+  - WSL2 기반 Docker Engine 사용 가능
+  - Hyper-V 기반 Docker Engine 사용 가능
+- Windows 10 Home 에디션
+  - WSL2 기반 Docker Engine 사용 가능
+
+<br/>
+
+<details>
+  <summary>Windows 10 Enterprise, Pro 또는 Education 에서 Hyper-V 활성화</summary>
+  
+  `작업관리자` > `성능` 에서 가상화가 `사용`인지 체크
+  
+  <img width="50%" alt="작업관리자에서 가상화 체크" src="https://user-images.githubusercontent.com/45352173/152539334-c70a9d4e-e9e5-4505-90f6-fee944479210.png" />
+  <br/>
+  
+  `제어판` > `프로그램` > `프로그램 및 기능` 에서 왼쪽의 `🛡️Windows 기능 켜기/끄기` 클릭<br/>
+  Hyper-V가 체크✅되어 있는 지 확인!<br/>
+  만약 체크되어 있지 않다면 체크 후 확인을 눌러준다.<br/>
+  
+  <img width="50%" alt="Hyper-V 활성화" src="https://user-images.githubusercontent.com/45352173/152544149-ccd66ce7-bdb6-4336-a85c-99d2e7aebf69.png" />
+  
+</details>
